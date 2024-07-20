@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: bisque;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: bisque;
+            padding: 3px;
+            box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.481);
+        }
+
+        nav > a {
+            margin-right: 10px;
+            padding: 10px;
+            text-align: none;
+
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 1opx;
+            border-radius: 10px 0px;
+            box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.433);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            margin: 4px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        article {
+            background-color: white;
+        }
+
+        article > aside {
+            background-color: rgba(136, 115, 90, 0.415);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meus site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos"></section>
+        <p>Noticias, Politica Novidade</p>
+        <section id="noticias">
+            <article>
+                <h2>Noticiais sobre desporto</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus autem, sint officiis dignissimos ut quod, esse impedit aut, eos aliquid rem odio libero consectetur velit. Aperiam totam itaque quidem impedit?</p>
+                <aside>
+                    <p>Arctigo escrito por <strong>João Katendi Nerckie</strong></p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>Site desenvolvido por dknzita</footer>
+</body>
+</html>

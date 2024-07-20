@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Midia em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem grande">
+    </picture>
+    <h1>Reproduzir Áudio</h1>
+    <p>Aprendendo a reproduzir áudio</p>
+    <audio src="media/We Will Be - Puddle of Infinity.mp3" controls autoplay></audio>
+
+    <p>Outra forma de carregar o audio</p>
+    
+    <audio preload = "metadata" controls autoplay>
+        <source src="media/Moonlight Sonata (by Beethoven) - Beethoven.mp3" type="audio/mpeg">
+
+        <source src="media/Moonlight Sonata (by Beethoven) - Beethoven.wav" type="audio/wav">
+
+        <p>Infelizmente seu navegador não consegue carregar o audio. <a href="media/Moonlight Sonata (by Beethoven) - Beethoven.mp3">Clique aqui para baixar o aquivo MP3</a></p>
+    </audio>
+
+    <h1>Carregando video no meu site hospedados localmentes</h1>
+    <p>Este video será hospedado no meu próprio servidor</p>
+
+    <video src="video/caminhando.webm" width="560" controls></video>
+    <hr>
+    <p>Carregar para diferntes tipos de navegadores</p>
+    <video controls poster="imagens/favicon.png" width="560">
+
+        <source src="video/caminhando.mp4" type="video/mp4">
+        <source src="video/caminhando.mkv" type="video/mkv">
+        <source src="video/caminhando.webm" type="video/webm">
+        <p>Seu navegador não tem compatibilidade para reproduzir este video.</p>
+    </video>
+
+    <h1>Incorporação de videos externos</h1>
+
+    <h2>Inserindo videos do Youtube</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg?si=cljrB83_wrBNiKxh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
